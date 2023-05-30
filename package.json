@@ -16,7 +16,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-cpp": "emcc cpp/MusicList.cpp cpp/Node.cpp -o cpp/output.js -s WASM=1"
+
+    
+
+    
+
+
+
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-addon-api": "^6.1.0",
+    "node-gyp": "^9.3.1"
   }
 }

@@ -4,7 +4,9 @@ import { Fragment } from "react";
 import classes from "./Header.module.css"
 import juneboxImage from "../../src/june-box-drawing.avif"
 
+
 function Header(){
+    
     useState();
     const clickHandler=()=>{
         console.log("clicked!!!");
@@ -21,10 +23,15 @@ return(
 <ul className={classes.mainnav}>
 <li>
     <button onClick={clickHandler}>
-    <a href ="http://localhost:61220/Playlist">Playlist</a>
+    <a href ="http://localhost:3006/Playlist">Playlist</a>
     </button>
 </li>
-<li><a href ="#">Github</a></li>
+<li>
+    <button >
+    <a href ="#">Github</a>
+    </button>
+    </li>
+    
 <li><a href ="#">Resume</a></li>
 <li><a href ="#">LinkedIn</a></li>
 
